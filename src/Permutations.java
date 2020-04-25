@@ -17,6 +17,9 @@ import java.util.*;
             return;
         }
         
+        // premutations loops all the elements in the set
+        // combination chooses the first element and loops rest of the element. this helps avoid duplicates
+        // whereas subset only talks about current element. whether to include in the result set or not
         for(int i = 0; i < nums.length; i++) {
             if(tres.contains(nums[i])) continue;  // if the digit is already there in the list then continue.
             
