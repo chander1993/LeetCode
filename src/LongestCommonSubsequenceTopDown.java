@@ -25,7 +25,7 @@ class Solution {
         if(text1.charAt(i) == text2.charAt(j)) {
             count = longestCommonSubsequence(text1, text2, i+1, j+1, map) + 1;
         } else {
-            count = Math.max(longestCommonSubsequence(text1, text2, i+1, j, map), longestCommonSubsequence(text1,                 text2, i, j+1, map));
+            count = Math.max(longestCommonSubsequence(text1, text2, i+1, j, map), longestCommonSubsequence(text1, text2, i, j+1, map));
         }
         map.put(key, count);
         return count;
