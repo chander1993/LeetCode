@@ -3,7 +3,12 @@
 import java.util.*;
 
 // Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
-
+// cyclic shift
+// convert into binary
+// append zeros to make it binary of 16 bits
+// whenever you hear a word cyclic its mostly '%' modulo operator. so think in that terms
+// see some patterns. what happens to right shift 011101  2>  010111. 
+// based on the patterns just substring and concatenate
 class TestClass {
     public static void main(String args[] ) throws Exception {
         Scanner sc = new Scanner(System.in);
