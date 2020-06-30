@@ -25,7 +25,7 @@ By default a min heap.
 For max heap pass the comparator during the object instantiation as a constructor parameter.
 Example: PriorityQueue<Integer>  queue = new PriorityQueue((a, b) -> b - a);
 
-add(element)            : adds the element into the heap and balances the heap.
+add(element)            : adds the element into the heap and balances(heapify) the heap.
 Complexity is O(log n)  : because it has to balance the heap tree after insertion.
 
 peek()                  : returns the root node of the heap without deleting. min element incase of min heap and vice versa.
